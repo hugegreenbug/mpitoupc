@@ -12,13 +12,7 @@ please refer to an MPI implementation's documentation, such as: http://www.open-
 
 Changes
 ---------------
-8/8/12
-* Fixes
-* MPI_Reduce and MPI_Gather support
-* MPI_Info support
-* MPI-IO functions
-
-6/12
+5/1/13
 * Initial Release
 
 
