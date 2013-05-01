@@ -1,0 +1,40 @@
+						MPI To UPC: An MPI library written in UPC
+            						   Version 1.0, August 2012
+					               Hugh Greenberg <hng@lanl.gov>
+
+About
+_______________
+MPI To UPC is an MPI library written in UPC.  The purpose of this library is to allow one to use an
+MPI program with UPC by compiling the code with the Berkeley UPC compiler and including this library.
+
+The API of this library conforms to the MPI standard.  If you need more information about a certain function,
+please refer to an MPI implementation's documentation, such as: http://www.open-mpi.org/doc/v1.6/ .
+
+Changes
+---------------
+8/8/12
+* Fixes
+* MPI_Reduce and MPI_Gather support
+* MPI_Info support
+* MPI-IO functions
+
+6/12
+* Initial Release
+
+
+Requirements
+-----------------
+- The Berkeley UPC compiler: http://upc.lbl.gov/
+- The PUPC-IO library: http://github.com/hugegreenbug
+
+How To Use
+-----------------
+* Modify the Makefiles to point to the correct berkeley upcc compiler and translator: http://upc.lbl.gov/
+* Make sure that the Makefiles point to the correct location of the PUPC-IO library
+* Type: make  to build the library
+* Use the library in your UPC code
+
+
+Compatible Programs
+-----------------
+test_fs: https://sourceforge.net/p/test-fs/code/22/tree/branches/upc_test_fs/
